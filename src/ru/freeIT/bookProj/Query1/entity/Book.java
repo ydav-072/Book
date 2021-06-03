@@ -20,7 +20,7 @@ public class Book {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Book{ name: " + name + ", author: " + author + ", genre: " + genre + " }";
     }
 
@@ -44,16 +44,8 @@ public class Book {
         this.author = author;
     }
 
-    public GenreBook getGenre() {
-        return genre;
-    }
-
     public void setGenre(GenreBook genre) {
         this.genre = genre;
-    }
-
-    public LocalDate getYearOfPublish() {
-        return yearOfPublish;
     }
 
     public void setYearOfPublish(LocalDate yearOfPublish) {

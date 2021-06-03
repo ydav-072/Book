@@ -16,17 +16,10 @@ public class Author {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getSecondName() {
         return secondName;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
-    }
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -35,7 +28,7 @@ public class Author {
         if (obj == null || obj.getClass() != this.getClass()) {
             return false;
         }
-        Author author =(Author) obj;
+        Author author = (Author) obj;
         if (author.getSecondName() != secondName)
             return false;
         if (author.getFirstName() != firstName)
@@ -44,7 +37,7 @@ public class Author {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "firstName: " + firstName + " secondName: " + secondName;
     }
 }
